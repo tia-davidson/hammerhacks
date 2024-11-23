@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>website</title>
+        <style>
+            img {
+                width: 600px;
+                height: auto;
+            }
+            h1 {
+                color:darkolivegreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>website</h1>
+        <p>i hate coding</p>
+
+        <img src="https://preview.redd.it/an871k4o1sn51.png?width=440&format=png&auto=webp&s=85dcd6cb73b8760802e254ee14dfa3c7ab444591">
+        <blockquote>amogus - cool guy</blockquote>
+        <button onclick="changeQuote()">change quote</button>
+
+        <script>
+            var index = 0;
+
+            function changeQuote() {
+                var quotes = [
+                    `"i really love this" - me`,
+                    `"i will swag" - me`,
+                    `"amogus" - cool guy`,
+                    `"aaaaaaaaAAAAAAAAAAAAAAAAAAAA" - aaa`
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockquote.innerHTML = quotes[index];
+                index++;
+                if (index >= 4) {
+                    index = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
